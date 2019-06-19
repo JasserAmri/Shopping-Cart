@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="shoppingCart.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container shopping-cart">
+    <div class="row title">
+      Shopping Bag
+      <p id="total-price"></p>
+    </div>
+
+    <div class="col image">
+      <img src="imani-clovis-234736-unsplash.jpg" width="250px" alt="Imani" />
+    </div>
+    <div class="col description">
+      <span>Common Projects</span>
+      <span>Bball High</span>
+      <span>White</span>
+    </div>
+    <div class="col quantity">
+      <input type="button" onclick="decrementValue(1);productPrice(1)" value="-" />
+      <input type="text" name="quantity" value="1" maxlength="2" max="10" size="1" id="number1" />
+      <input type="button" onclick="incrementValue(1);productPrice(1)" value="+" />
+    </div>
+    <div>
+      <p id="price1">25</p>
+      <p>£</p>
+      <p id="prod-price1">0</p>
+
+    </div>
+  </div>
+  <div class="row product ">
+    <div class="buttons">
+      <i class="fas fa-heart" onclick="myHeart(this)"></i>
+      <i class="fas fa-times" id="remove" onclick="myFunction(this)"></i>
+    </div>
+    <div class="col image ">
+      <img src="nordwood-themes-162465-unsplash.jpg" width="250px" alt="Nordwood" />
+
+    </div>
+    <div class="col description">
+      <span>Common Projects</span>
+      <span>Bball High</span>
+      <span>White</span>
+    </div>
+    <div class="col quantity">
+      <input type="button" onclick="decrementValue(2);productPrice(2)" value="-" />
+      <input type="text" name="quantity" value="1" maxlength="2" max="10" size="1" id="number2" />
+      <input type="button" onclick="incrementValue(2);productPrice(2)" value="+" />
+    </div>
+    <div>
+      <p id="price2">15</p>
+      <p>£</p>
+      <p id="prod-price2">0</p>
+    </div>
+  </div>
+  <div class="row product">
+    <div class="buttons">
+      <i class="fas fa-heart" onclick="myHeart(this)"></i>
+      <i class="fas fa-times" id="remove" onclick="myFunction(this)"></i>
+    </div>
+    <div class="col image">
+      <img src="paul-gaudriault-661082-unsplash.jpg" width="250px" alt="Paul-Gaudriault" />
+
+    </div>
+    <div class="col description">
+      <span>Common Projects</span>
+      <span>Bball High</span>
+      <span>White</span>
+    </div>
+    <div class="col quantity">
+      <input type="button" onclick="decrementValue(3);productPrice(3)" value="-" />
+      <input type="text" name="quantity" value="1" maxlength="2" max="10" size="1" id="number3" />
+      <input type="button" onclick="incrementValue(3);productPrice(3)" value="+" />
+    </div>
+    <div>
+      <p id="price3">35</p>
+      <p>£</p>
+      <p id="prod-price3"></p>
+    </div>
+  </div>
+
+  </div>
+  <script src="shoppingCart.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
